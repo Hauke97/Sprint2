@@ -8,86 +8,71 @@ namespace ZahnradSpint2
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            
-            Console.WriteLine("Geben Sie mindestens zwei Werte an, für die restlichen Werte geben Sie 0 ein");
-            Console.WriteLine("Modul:");
-            double m = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Zähnezahl:");
-            double z = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Teilkreisdurchmesser:");
-            double d = Convert.ToDouble(Console.ReadLine());
-
-
-            if (m != 0 && z != 0)
+        
+        
+        
+            static void Main()
             {
-                double p = Math.PI / m;
-                d = m * z;
-                double c = 0.167 * m;
-                double df = d - 2 * (m + c);
-                double da = d + 2 * m;
-                double h = 2 * m + c;
-                double hf = m + c;
-                double ha = m;
+                double m;
+                double z;
+                double p;
+                double df;
+                double h;
+                double hf;
+                double ha;
+                double db;
+                Math.Cos(20);
 
-                Console.WriteLine("Teilung:" + p);
-                Console.WriteLine("Kopfspiel:" + c + "mm");
-                Console.WriteLine("Fußkreisdurchmesser:" + df + "mm");
-                Console.WriteLine("Kopfkreisdurchmesser:" + da + "mm");
-                Console.WriteLine("Ergebnis für die Zahnhöhe:" + h + "mm");
-                Console.WriteLine("Zahnfußhöhe" + hf + "mm");
-                Console.WriteLine("Ergebnis für die Zahnkopfhöhe:" + ha + "mm");
-                Console.ReadKey();
+
+
+            }
+            // Berechnung mit Modul und Zähnezahl
+            static void Berechnung(double Ergebnis)
+            {
+
+
+                double h = 2 * m + c;
+                Console.WriteLine(h);
+                double d = (m * z);
+                Console.WriteLine(d);
+                double p = (Math.PI * m);
+                Console.WriteLine(p);
+                double hf = (m + c);
+                Console.WriteLine(hf);
+                double ha = m;
+                Console.WriteLine(ha);
+                double db = (z * m * Math.Cos(20));
+                Console.WriteLine(db);
+
             }
 
-
-            else if (m != 0 && d != 0) 
+            // Berechnung mit Modul und Teilkreisdurchmesser 
+            static void Berechnung2(double Ergebnis)
             {
-                z = d / m;
-                double p = Math.PI / m;
-                double c = 0.167 * m;
-                double df = d - 2 * (m + c);
-                double da = d + 2 * m;
-                double h = 2 * m + c;
-                double hf = m + c;
+                double z = (d / m);
+                double p = (Math.PI * m);
+                double hf = (m + c);
+                double h = (2 * m + c);
                 double ha = m;
-
-                Console.WriteLine("Zähnezahl:" + z);
-                Console.WriteLine("Teilung:" + p);
-                Console.WriteLine("Kopfspiel:" + c + "mm");
-                Console.WriteLine("Fußkreisdurchmesser:" + df + "mm");
-                Console.WriteLine("Kopfkreisdurchmesser:" + da + "mm");
-                Console.WriteLine("Ergebnis für die Zahnhöhe:" + h + "mm");
-                Console.WriteLine("Zahnfußhöhe" + hf + "mm");
-                Console.WriteLine("Ergebnis für die Zahnkopfhöhe:" + ha + "mm");
-                Console.ReadKey();
 
 
             }
 
-            else if ( z!=0 && d!=0 )
+            // Berechnungen mit Zähnezahl und Teilkreisdurchmesser 
+            static void Berechnung3(double Ergebnis)
             {
-                m = d / z;
-                double p = Math.PI / m;
-                double c = 0.167 * m;
-                double df = d - 2 * (m + c);
-                double da = d + 2 * m;
-                double h = 2 * m + c;
-                double hf = m + c;
-                double ha = m;
-                Console.WriteLine("Modul:" + m);
-                Console.WriteLine("Teilung:" + p);
-                Console.WriteLine("Kopfspiel:" + c + "mm");
-                Console.WriteLine("Fußkreisdurchmesser:" + df + "mm");
-                Console.WriteLine("Kopfkreisdurchmesser:" + da + "mm");
-                Console.WriteLine("Ergebnis für die Zahnhöhe:" + h + "mm");
-                Console.WriteLine("Zahnfußhöhe" + hf + "mm");
-                Console.WriteLine("Ergebnis für die Zahnkopfhöhe:" + ha + "mm");
-                Console.ReadKey();
-            }
-        }
+                double m = (d / z);
+                double da = (d + 2 * m);
+                double df = (d - 2 * (m + c));
 
+
+            }
+
+        
 
     }
+
+
+
+}
 }
