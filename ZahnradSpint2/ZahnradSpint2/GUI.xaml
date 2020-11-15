@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="ZahnradSpint2.GUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ZahnradSpint2"
+             mc:Ignorable="d" Height="470.901" Width="856.557">
+    <Grid Background="#FFE6D0D0">
+        <Button Content="Berechen
+                " HorizontalAlignment="Left" Margin="595,0,0,71" Width="165" Height="70" VerticalAlignment="Bottom" FontSize="24"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="183,125,0,0" VerticalAlignment="Top" Height="65" Width="134"/>
+        <TextBox HorizontalAlignment="Left" Height="89" Margin="226,330,0,0" TextWrapping="Wrap" Text="Modul:" VerticalAlignment="Top" Width="239"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="639,75,0,0" VerticalAlignment="Top"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="374,238,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</UserControl>
