@@ -25,4 +25,26 @@ namespace ZahnradSpint2
             InitializeComponent();
         }
     }
+
+
+    //Ausblenden nicht benötigter Felder
+        //lblObenLinks.Visibility = Visibility.Hidden
+       // txtObenLinks.Visibility = Visibility.Hidden
+        //lblObenRechts.Visibility = Visibility.Hidden
+        //txtObenRechts.Visibility = Visibility.Hidden
+        //lblUntenLinks.Visibility = Visibility.Hidden
+        //txtUntenLinks.Visibility = Visibility.Hidden
+        //lblUntenRechts.Visibility = Visibility.Hidden
+       // txtUntenRechts.Visibility = Visibility.Hidden
+        //lblModul.Visibility = Visibility.Hidden
+       // txtModul.Visibility = Visibility.Hidden
+        //lblTeilkreis.Visibility = Visibility.Hidden
+        //txtTeilkreis.Visibility = Visibility.Hidden
+        //lblTeilung.Visibilty = Visibility.Hidden
+        //txtTeilung.Visibility = Visibility.Hidden
+         
+        //imFigur.Visibility = Visibility.Hidden
+
+
+
 }
