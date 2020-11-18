@@ -8,10 +8,21 @@
     <Grid Background="#FFE6D0D0">
         <Button Content="Berechen
                 " HorizontalAlignment="Left" Margin="595,0,0,71" Width="165" Height="70" VerticalAlignment="Bottom" FontSize="24"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="183,125,0,0" VerticalAlignment="Top" Height="65" Width="134"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="246,125,0,0" VerticalAlignment="Top" Height="65" Width="71" RenderTransformOrigin="0.728,0.449"/>
         <TextBox HorizontalAlignment="Left" Height="89" Margin="226,330,0,0" TextWrapping="Wrap" Text="Modul:" VerticalAlignment="Top" Width="239"/>
         <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="639,75,0,0" VerticalAlignment="Top"/>
         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="374,238,0,0" VerticalAlignment="Top" Width="100"/>
-        <TreeView HorizontalAlignment="Left" Height="100" Margin="25,52,0,0" VerticalAlignment="Top" Width="100"/>
+        <TreeView x:Name="trvEingabe"  HorizontalAlignment="Left" Height="381" Margin="10,0,0,0" VerticalAlignment="Top" Width="211" RenderTransformOrigin="0.294,-0.182"/>
+        <TreeViewItem Header="Eingabeparameter">
+            <TreeViewItem Header="Modul, Teilkreisdurchmesser"></TreeViewItem>
+            <TreeViewItem Header="Teilkreisdurchmesser, Zaehnezahl"></TreeViewItem>
+            <TreeViewItem Header="Modul, Zaehnezahl"></TreeViewItem>
+        </TreeViewItem>
+
+
+
+
+
+
     </Grid>
 </UserControl>
